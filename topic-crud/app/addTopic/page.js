@@ -34,7 +34,7 @@ const addTopic = () => {
           className="px-8 py-2 border text-gray-700 border-slate-600 "
         />
         <Link href="/">
-          <button onClick={submitHandler} className="bg-green-500 px-6 py-1 text-white font-bold w-fit rounded-md hover:bg-green-600 shadow-lg">
+          <button onClick={submitHandler} className="bg-green-500 px-8 py-1 text-white font-bold w-fit rounded-md hover:bg-green-600 shadow-lg">
             Submit
           </button>
         </Link>

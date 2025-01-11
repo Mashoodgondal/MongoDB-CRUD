@@ -45,53 +45,5 @@ const EdditTopicForm = ({ id, title, description }) => {
 };
 
 export default EdditTopicForm;
-// "use client";
-// import React, { useEffect, useState } from "react";
-// import { HiPencilAlt } from "react-icons/hi";
 
-// const getTopicByid = async (id) => {
-//   try {
-//     const res = await fetch(`http://localhost:3000/api/topic/${id}`, { cache: "no-store" });
-
-//     if (!res.ok) {
-//       throw new Error("Failed to fetch topic");
-//     }
-
-//     const data = await res.json();
-//     return data;
-//   } catch (error) {
-//     console.error("Error in fetching topics:", error);
-//     return null;
-//   }
-// };
-
-// const EdditTopicForm = ({ id }) => {
-//   const [topic, setTopic] = useState(null);
-
-//   useEffect(() => {
-//     const fetchTopic = async () => {
-//       const data = await getTopicByid(id);
-//       if (data) {
-//         setTopic(data);
-//       }
-//     };
-
-//     fetchTopic();
-//   }, [id]);
-
-//   if (!topic) {
-//     return <p>Loading...</p>; // Show a loading state while fetching
-//   }
-
-//   const { title, description } = topic;
-
-//   return (
-//     <div>
-//       <button className="hover:text-blue-600">
-//         <HiPencilAlt size={24} title={title} description={description} />
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default EdditTopicForm;
+// 
