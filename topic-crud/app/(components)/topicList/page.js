@@ -98,7 +98,7 @@ const TopicList = () => {
   }
 
   if (!topics || topics.length === 0) {
-    return <p className="text-red-500">No topics available.</p>;
+    return <p className="text-indigo-500 text-center">No topics available. Go to Add Topic button</p>;
   }
 
   return (

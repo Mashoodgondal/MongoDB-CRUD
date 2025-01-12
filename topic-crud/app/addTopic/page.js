@@ -18,7 +18,7 @@ const addTopic = () => {
   }
   return (
     <div>
-      <form className="flex flex-col gap-2 p-6">
+      <form className="flex flex-col  gap-2 p-6">
         <input
           onChange={(e) => settitle(e.target.value)}
           value={title}
@@ -33,11 +33,13 @@ const addTopic = () => {
           placeholder="Add Description"
           className="px-8 py-2 border text-gray-700 border-slate-600 "
         />
-        <Link href="/">
-          <button onClick={submitHandler} className="bg-green-500 px-8 py-1 text-white font-bold w-fit rounded-md hover:bg-green-600 shadow-lg">
-            Submit
-          </button>
-        </Link>
+        <div className="w-full text-center md:text-left">
+          <Link href="/">
+            <button onClick={submitHandler} className=" bg-green-600 px-8 py-1 text-white font-bold  rounded-md hover:bg-green-700 shadow-lg">
+              Submit
+            </button>
+          </Link>
+        </div>
       </form>
     </div>
   );
