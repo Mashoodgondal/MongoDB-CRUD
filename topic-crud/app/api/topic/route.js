@@ -1,4 +1,4 @@
-// pages / api / items.js
+
 
 import connectDB from '@/lib/connection'; // import the mongoose connection
 
